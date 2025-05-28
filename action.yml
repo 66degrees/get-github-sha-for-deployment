@@ -3,10 +3,6 @@ name: "Deployment GitHub SHA"
 on:
 
   workflow_call:
-    outputs:
-      value:
-        description: "The GitHub SHA to use for deployments"
-        value: ${{ steps.github-sha.outputs.value }}
 jobs: 
   runs:
     runs-on: ["ubuntu-latest"]
